@@ -1,71 +1,90 @@
-# Getting Started with Create React App
+# 22 State Homework: Redux Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Your Task
 
-## Available Scripts
+In this unit, we learned how to manage global state using React’s Context API. The Context API is quickly gaining traction as a worthy alternative or perhaps even successor to other libraries that manage global state in tandem with React, such as Flux or MobX. Nonetheless, the open source JavaScript library Redux remains the industry standard for managing complex state in a large-scale React application, and you’ll likely encounter it on the job.
 
-In the project directory, you can run:
+Your challenge this week is to refactor the e-commerce platform from [Activity 26](../01-Activities/26-Stu_Actions-Reducers/Unsolved) so that it uses [Redux](https://redux.js.org/). we didn't need to make sweeping changes to the code, but did need to read through the Redux documentation on my own to find the information i needed. Some guidelines had been provided in the Getting Started section that point me in the right direction. 
 
-### `npm start`
+**On the Job**: Web developers frequently have to immerse themselves in a new technology to solve a problem, with only that tool’s documentation for help. They must sift through it to find the information that matches the specific problem they’re trying to solve. This assignment will allow you to practice a skill that you’ll use many times over the course of your career.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## User Story
 
-### `npm test`
+```md
+AS a senior engineer working on an e-commerce platform
+I WANT my platform to use Redux to manage global state instead of the Context API
+SO THAT my website's state management is taken out of the React ecosystem
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acceptance Criteria
 
-### `npm run build`
+```md
+GIVEN an e-commerce platform that uses Redux to manage global state
+WHEN I review the app’s store
+THEN I find that the app uses a Redux store instead of the Context API
+WHEN I review the way the React front end accesses the store
+THEN I find that the app uses a Redux provider
+WHEN I review the way the app determines changes to its global state
+THEN I find that the app passes reducers to a Redux store instead of using the Context API
+WHEN I review the way the app extracts state data from the store
+THEN I find that the app uses Redux instead of the Context API
+WHEN I review the way the app dispatches actions
+THEN I find that the app uses Redux instead of the Context API
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Grading Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This homework is graded based on the following criteria:
 
-### `npm run eject`
+### Technical Acceptance Criteria: 40%
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Satisfies all of the preceding acceptance criteria plus the following:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    * Retains all the functionality of the original application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    * Application must be deployed to Heroku.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Deployment: 32%
 
-## Learn More
+* Application deployed at live URL.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Application loads with no errors.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Application GitHub URL submitted.
 
-### Code Splitting
+* GitHub repository contains application code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Application Quality: 15%
 
-### Analyzing the Bundle Size
+* User experience is intuitive and easy to navigate.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* User interface style is clean and polished.
 
-### Making a Progressive Web App
+* Application resembles the mock-up functionality provided in the Challenge instructions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Repository Quality: 13%
 
-### Advanced Configuration
+* Repository has a unique name.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Repository follows best practices for file structure and naming conventions.
 
-### Deployment
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Repository contains multiple descriptive commit messages.
 
-### `npm run build` fails to minify
+* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# store_redux_part2
+### README.md Quality: 0%
+
+## Review
+
+You are required to submit BOTH of the following for review:
+
+* The URL of the functional, deployed application.
+
+* The URL of the GitHub repository, with a unique name and a README describing the project.
+
+- - -
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
